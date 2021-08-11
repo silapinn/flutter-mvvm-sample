@@ -1,9 +1,9 @@
-import 'package:flutter/material.dart';
+import 'package:freezed_annotation/freezed_annotation.dart';
 
-@immutable
-class LoginCredential {
-  final String username;
-  final String password;
+part 'login_credential.freezed.dart';
 
-  LoginCredential(this.username, this.password);
+@freezed
+class LoginCredential with _$LoginCredential {
+  const factory LoginCredential(String username, String password) =
+      _LoginCredential;
 }

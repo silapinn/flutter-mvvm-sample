@@ -30,7 +30,7 @@ class LoginViewModel extends BaseViewModel
       return;
     }
     if (password.isEmpty) {
-      showErrorMessage("Password should be empty");
+      showErrorMessage("Password should not be empty");
       return;
     }
 
